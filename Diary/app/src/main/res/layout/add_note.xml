@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/tv_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new note"
+        android:textSize="30sp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+        <RadioButton
+            android:id="@+id/rb_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happy"
+            android:padding="10dp"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/rb_sad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sad"
+            android:padding="10dp"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/rb_surprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surprise"
+            android:padding="10dp"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_title"
+        android:hint="Title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_content"
+        android:hint="Content"/>
+    <Button
+        android:id="@+id/but_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+</LinearLayout>

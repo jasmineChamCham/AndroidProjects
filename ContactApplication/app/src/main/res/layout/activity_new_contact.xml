@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/grey"
+            android:src="@drawable/ic_baseline_person_24"/>
+
+
+        <ImageView
+            android:id="@+id/camera"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            android:elevation="2dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_phone_iphone_24"
+                android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saving to"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Device"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tv_firstname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First name" />
+
+                <EditText
+                    android:id="@+id/tv_lastname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last name" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_phone_24" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tv_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_email_24" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email" />
+
+                <EditText
+                    android:id="@+id/tv_home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Home" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More fields"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/teal_700"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
